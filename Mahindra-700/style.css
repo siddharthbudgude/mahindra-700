@@ -1079,10 +1079,12 @@ h6 {
 
                 .left {
                     width: 100%;
+                    order: 2;
                 }
 
                 .right {
                     width: 100%;
+                    order: 1;
                 }
             }
 
@@ -1105,6 +1107,13 @@ h6 {
 
             .car-mileage {
                 width: 100%;
+                .mileage-table{
+                    table{
+                        thead{
+                            height: 30px;
+                        }
+                    }
+                }
             }
         }
 
@@ -1115,6 +1124,7 @@ h6 {
                 .left {
                     width: 100%;
                     padding: 30px;
+                    order: 2;
 
                     p {
                         text-wrap: balance;
@@ -1143,6 +1153,11 @@ h6 {
 
                 .expert-tab {
                     padding-left: 30px;
+                    .tab-two{
+                        a{
+                            left:30%;
+                        }
+                    }
                 }
             }
         }
@@ -1212,6 +1227,7 @@ h6 {
 
                 .left {
                     width: 100%;
+                    order: 2;
 
                     .vedio-section {
                         flex-direction: column;
@@ -1232,6 +1248,7 @@ h6 {
 
                 .right {
                     width: 100%;
+                    order: 1;
                 }
             }
 
