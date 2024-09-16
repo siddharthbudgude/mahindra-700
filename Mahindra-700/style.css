@@ -15,6 +15,9 @@ h6 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
 
 /*home page css*/
 .home-index {
@@ -55,102 +58,33 @@ h6 {
     }
 
     .car-rating {
-        display: flex;
-        gap: 70px;
-        padding: 0px 70px;
+        max-width: 100%;
 
         .left {
-            width: 50%;
-            text-align: right;
-
             .car-rate-top {
-                display: flex;
-                flex-direction: column;
-
-                .rating {
-                    i {
-                        color: #FFAC30;
-                    }
-
-                    span {
-                        color: #FFAC30;
-                    }
-                }
-
                 .price-range {
-                    font-size: 32px;
-                    font-weight: 800;
                     color: #55C2FF;
                 }
 
                 h1 {
                     font-size: 7vw;
-                    font-weight: 600;
-                    color: #fff;
                 }
 
                 H2 {
                     font-size: 6vw;
-                    font-weight: 600;
-                    color: #fff;
                 }
-            }
-
-            img {
-                width: 100%;
             }
         }
 
         .right {
-            width: 50%;
-
             .xuv-feature {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                align-items: baseline;
-                gap: 48px;
-                margin-bottom: 75px;
-
                 section {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: baseline;
-                    align-items: flex-start;
-
-                    img {
-                        width: auto;
-                    }
-
                     h4 {
                         color: #55C2FF;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-
-                    span {
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 800;
                     }
                 }
             }
 
-            p {
-                font-size: 24px;
-                font-weight: 500;
-                color: #fff;
-                margin-bottom: 40px;
-            }
-
-            a {
-                background-color: #FFAC30;
-                padding: 10px;
-                color: #000;
-                font-size: 2vw;
-                font-weight: 500;
-                border-radius: 40px;
-                text-decoration: none;
-            }
         }
     }
 
@@ -162,30 +96,15 @@ h6 {
         background-size: contain;
 
         .price-top {
-            display: flex;
+            max-width: 100%;
 
             .left {
-                width: 60%;
-
                 h1 {
-                    color: #fff;
                     font-size: 6vw;
-                    font-weight: 600;
                 }
 
                 p {
                     font-size: 2vw;
-                    color: #fff;
-                    font-weight: 500;
-                }
-            }
-
-            .right {
-                width: 40%;
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
                 }
             }
         }
@@ -246,6 +165,7 @@ h6 {
                         border: none;
                         width: 100%;
                         border-spacing: 0px 30px;
+                        border-collapse: separate;
 
                         thead {
                             background-color: rgba(245, 245, 245, 0.28);
@@ -355,6 +275,7 @@ h6 {
                     border: none;
                     width: 100%;
                     border-spacing: 0px 30px;
+                    border-collapse: separate;
 
                     thead {
                         background-color: rgba(245, 245, 245, 0.28);
@@ -561,25 +482,15 @@ h6 {
         }
     }
 
+    .car-pros.container {
+        max-width: 100%;
+    }
+
     .car-pros {
-        padding: 0px 0px 70px 0px;
+  
 
         .pros-one {
-            display: flex;
-            padding-bottom: 70px;
-
-            .left {
-                width: 50%;
-
-                img {
-                    width: 100%;
-                }
-            }
-
             .right {
-                width: 50%;
-                padding-right: 70px;
-
                 span {
                     display: flex;
                     gap: 15px;
@@ -587,40 +498,27 @@ h6 {
                     font-weight: 200;
                     font-family: "League Spartan", sans-serif;
                     color: #FFF;
+                    align-items: center;
 
                     h1 {
-                        font-weight: 600;
-                        color: #fff;
                         font-size: 7vw;
                     }
                 }
 
                 h3 {
                     font-size: 3vw;
-                    color: #fff;
-                    font-weight: 600;
                 }
 
                 p {
                     font-size: 2vw;
-                    font-weight: 500;
-                    color: #fff;
                 }
             }
         }
 
         .pros-two {
-            display: flex;
-            padding: 40px 70px;
-            border-top: 2px solid #fff;
-
             .amaz-left {
-                width: 50%;
-
                 h4 {
-                    color: #00BA6C;
                     font-size: 3vw;
-                    font-weight: 700;
                 }
             }
 
@@ -632,42 +530,26 @@ h6 {
                     margin: 0;
 
                     li {
-                        color: #fff;
                         font-size: 1.6vw;
-                        font-weight: 500;
-                        margin-bottom: 10px;
                     }
                 }
             }
         }
 
         .pros-three {
-            display: flex;
-            padding: 40px 70px;
-            border-top: 2px solid #fff;
-
             .better-left {
-                width: 50%;
-
                 h4 {
-                    color: #FE5959;
                     font-size: 3vw;
-                    font-weight: 700;
                 }
             }
 
             .better-right {
-                width: 50%;
-
                 ul {
                     padding: 0;
                     margin: 0;
 
                     li {
-                        color: #fff;
                         font-size: 1.6vw;
-                        font-weight: 500;
-                        margin-bottom: 10px;
                     }
                 }
             }
@@ -1017,7 +899,7 @@ h6 {
     .search-nav {
         display: flex;
         gap: 30px;
-        align-items:center
+        align-items: center
     }
 
     .menu-icon {
@@ -1045,30 +927,6 @@ h6 {
             p {
                 font-size: 1.8vw;
                 bottom: 5%;
-            }
-        }
-
-        .car-rating {
-            flex-direction: column;
-            padding: 30px;
-            gap: 0px;
-
-            .left {
-                width: 100%;
-                text-align: left;
-            }
-
-            .right {
-                width: 100%;
-
-                p {
-                    font-size: 4vw;
-                    padding: 0;
-                }
-
-                .xuv-feature {
-                    margin-bottom: 30px;
-                }
             }
         }
 
@@ -1108,9 +966,10 @@ h6 {
 
             .car-mileage {
                 width: 100%;
-                .mileage-table{
-                    table{
-                        thead{
+
+                .mileage-table {
+                    table {
+                        thead {
                             height: 30px;
                         }
                     }
@@ -1154,40 +1013,16 @@ h6 {
 
                 .expert-tab {
                     padding-left: 30px;
-                    .tab-two{
-                        a{
-                            left:30%;
+
+                    .tab-two {
+                        a {
+                            left: 30%;
                         }
                     }
                 }
             }
         }
 
-        .car-pros {
-            padding: 0px;
-
-            .pros-one {
-                flex-direction: column;
-                padding: 0;
-
-                .left {
-                    width: 100%;
-                }
-
-                .right {
-                    width: auto;
-                    padding: 30px;
-                }
-            }
-
-            .pros-two {
-                padding: 30px;
-            }
-
-            .pros-three {
-                padding: 30px;
-            }
-        }
 
         .car-review {
             padding: 15px;
@@ -1274,36 +1109,13 @@ h6 {
                 bottom: 5%;
             }
         }
-
-        .car-rating {
-            flex-direction: column;
-            padding: 30px;
-            gap: 0px;
-
-            .left {
-                width: 100%;
-                text-align: left;
-            }
-
-            .right {
-                width: 100%;
-
-                p {
-                    font-size: 3vw;
-                    padding: 0;
-                }
-
-                .xuv-feature {
-                    margin-bottom: 30px;
-                }
-            }
-        }
     }
 }
 
 @media (max-width: 768px) {
     .home-index {
         overflow: hidden;
+
         .nav-links {
             display: none;
             position: absolute;
@@ -1315,28 +1127,28 @@ h6 {
             align-items: center;
             z-index: 1000;
         }
-    
+
         .nav-links.active {
             display: flex;
             align-items: flex-start;
             left: 20px;
-    
+
         }
-    
+
         .nav-links li {
             margin: 10px 0;
         }
-    
+
         .menu-icon {
             display: block;
         }
-    
+
         .search-bar {
             flex: 1;
             justify-content: center;
         }
     }
- 
+
 }
 
 @media (max-width: 480px) {

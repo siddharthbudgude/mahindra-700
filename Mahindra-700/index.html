@@ -7,15 +7,21 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!--icon library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--slider js cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!--bootstrap css  cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--css link-->
     <link rel="stylesheet" href="../Mahindra-700/style.css">
 </head>
 
@@ -56,78 +62,86 @@
             <p>With its Sci-Fi Technology, Spirited Performance and World-Class Safety, this powerhouse of an SUV is
                 obsessively engineered to dial up adrenaline like never before.</p>
         </section>
-        <section class="car-rating">
-            <div class="left">
-                <div class="car-rate-top">
-                    <h1>Mahindra</h1>
-                    <h2>XUV 700</h2>
-                    <span class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <span>108 Reviews </span>
-                    </span>
-                    <h class="price-range">Rs.13.18 - 24.58 Lakh</h3>
+        <!--Using bootstrap-->
+        <section class="car-rating container">
+            <div class="row gy-4">
+                <div class="left col-12 col-md-6">
+                    <div class="car-rate-top text-start text-md-end">
+                        <h1 class="fw-bold text-white">Mahindra</h1>
+                        <h2 class="text-white fw-bold">XUV 700</h2>
+                        <span class="rating d-block">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star-half text-warning"></i>
+                            <span class=text-warning>108 Reviews </span>
+                        </span>
+                        <h class="price-range h3 fw-bold ">Rs.13.18 - 24.58 Lakh</h3>
+                    </div>
+                    <div>
+                        <img src="../Mahindra-700/Images/mahindra-rating12.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <img src="../Mahindra-700/Images/mahindra-rating12.png">
+                <div class="right col-12 col-md-6 container">
+                    <div class="xuv-feature row gx-4 gy-4 mb-5">
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/Engine.png">
+                            <h4 class="h5">Engine</h4>
+                            <span class="h4 text-white">1997 to 2184 cc</span>
+                        </section>
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/safety.png">
+                            <h4 class="h5">Safety</h4>
+                            <span class="h4 text-white">5 Star (Global NCAP)</span>
+                        </section>
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/Body-type.png">
+                            <h4 class="h5">Body Type </h4>
+                            <span class="h4 text-white">SUV</span>
+                        </section>
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/transmission.png">
+                            <h4 class="h5">Transmission</h4>
+                            <span class="h4 text-white">Manual & Automatic (TC)</span>
+                        </section>
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/seating-cap.png">
+                            <h4 class="h5">Seating Capacity </h4>
+                            <span class="h4 text-white">5 & 7 Seater</span>
+                        </section>
+                        <section class="col-4">
+                            <img src="../Mahindra-700/Images/fueal-type.png">
+                            <h4 class="h5">Fuel Type </h4>
+                            <span class="h4 text-white">Petrol & Diesel</span>
+                        </section>
+                    </div>
+                    <p class="text-white h5">The Mahindra XUV700 has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 2198 cc
+                        while the Petrol engine is 1999 cc . It is available with Automatic & Manual transmission. Depending
+                        upon the variant and fuel type the XUV700 has a mileage of . The XUV700 is a 7 seater 4 cylinder car
+                        and has length of 4695, width of 1890 and a wheelbase of 2750.</p>
+                    <a href="#" class="h5 mt-4 fw-bold d-block f-semibold text-black bg-warning p-3 rounded-pill" style="width: fit-content;">Check Current Offers</a>
                 </div>
-            </div>
-            <div class="right">
-                <div class="xuv-feature">
-                    <section>
-                        <img src="../Mahindra-700/Images/Engine.png">
-                        <h4>Engine</h4>
-                        <span>1997 to 2184 cc</span>
-                    </section>
-                    <section>
-                        <img src="../Mahindra-700/Images/safety.png">
-                        <h4>Safety</h4>
-                        <span>5 Star (Global NCAP)</span>
-                    </section>
-                    <section>
-                        <img src="../Mahindra-700/Images/Body-type.png">
-                        <h4>Body Type </h4>
-                        <span>SUV</span>
-                    </section>
-                    <section>
-                        <img src="../Mahindra-700/Images/transmission.png">
-                        <h4>Transmission</h4>
-                        <span>Manual & Automatic (TC)</span>
-                    </section>
-                    <section>
-                        <img src="../Mahindra-700/Images/seating-cap.png">
-                        <h4>Seating Capacity </h4>
-                        <span>5 & 7 Seater</span>
-                    </section>
-                    <section>
-                        <img src="../Mahindra-700/Images/fueal-type.png">
-                        <h4>Fuel Type </h4>
-                        <span>Petrol & Diesel</span>
-                    </section>
-                </div>
-                <p>The Mahindra XUV700 has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 2198 cc
-                    while the Petrol engine is 1999 cc . It is available with Automatic & Manual transmission. Depending
-                    upon the variant and fuel type the XUV700 has a mileage of . The XUV700 is a 7 seater 4 cylinder car
-                    and has length of 4695, width of 1890 and a wheelbase of 2750.</p>
-                <a href="#">Check Current Offers</a>
             </div>
         </section>
+        <!---->
         <section class="car-price">
-            <div class="price-top">
-                <div class="left">
-                    <h1>Mahindra <br>
-                        XUV700 Price</h1>
-                    <p>The price of Mahindra XUV700 starts at Rs. 13.18 Lakh and goes upto Rs. 24.58 Lakh. Mahindra
-                        XUV700 is offered in 23 variants - the base model of XUV700 is MX and the top variant Mahindra
-                        XUV700 AX7 Diesel AT Luxury Pack AWD which comes at a price tag of Rs. 24.58 Lakh.</p>
-                </div>
-                <div class="right">
-                    <img src="../Mahindra-700/Images/mahindrafront.png">
+            <!--Using Bootstrap-->
+            <div class="price-top container">
+                <div class="row">
+                    <div class="left col-12 col-md-6">
+                        <h1 class="fw-bold text-white">Mahindra <br>
+                            XUV700 Price</h1>
+                        <p class=" text-white">The price of Mahindra XUV700 starts at Rs. 13.18 Lakh and goes upto Rs. 24.58 Lakh. Mahindra
+                            XUV700 is offered in 23 variants - the base model of XUV700 is MX and the top variant Mahindra
+                            XUV700 AX7 Diesel AT Luxury Pack AWD which comes at a price tag of Rs. 24.58 Lakh.</p>
+                    </div>
+                    <div class="right col-12 col-md-6">
+                        <img src="../Mahindra-700/Images/mahindrafront.png" class="img-fluid">
+                    </div>
                 </div>
             </div>
+            <!---->
             <div class="price-table">
                 <div class="table-nav">
                     <ul>
@@ -340,46 +354,48 @@
             </div>
 
         </section>
-        <section class="car-pros">
-            <div class="pros-one">
-                <div class="left">
-                    <img src="../Mahindra-700/Images/pros-front.png">
+        <!--Using Bootstrap-->
+        <section class="car-pros container pb-3 pb-md-5">
+            <div class="pros-one row">
+                <div class="left col-12 col-md-6">
+                    <img src="../Mahindra-700/Images/pros-front.png" class="img-fluid">
                 </div>
-                <div class="right">
+                <div class="right col-12 col-md-6">
                     <span>
-                        <h1>Pros</h1>and<h1>Cons</h1>
+                        <h1 class="fw-bold">Pros</h1>and<h1>Cons</h1>
                     </span>
-                    <h3>Take on Mahindra XUV700</h3>
-                    <p>If you are in the market looking for any kind of SUV for your family, the XUV700 first gets all
+                    <h3 class="text-white">Take on Mahindra XUV700</h3>
+                    <p class="text-white">If you are in the market looking for any kind of SUV for your family, the XUV700 first gets all
                         the basics right and then impress you with its segment-first features</p>
                 </div>
             </div>
-            <div class="pros-two">
-                <div class="amaz-left">
-                    <h4>Absolutely Amazing</h4>
+            <div class="pros-two row py-3 py-md-5  border-top px-md-5">
+                <div class="amaz-left col-6">
+                    <h4 class="text-success">Absolutely Amazing</h4>
                 </div>
-                <div class="amaz-right">
+                <div class="amaz-right col-6">
                     <ul>
-                        <li>Not the quietest diesel - There's some drivetrain lash when using the throttle</li>
-                        <li>Airy cabin - More spacious than the Alcazar and almost as roomy as the Safari</li>
-                        <li>Capable powertrains - The powertrain options effortlessly power the bulky XUV700</li>
-                        <li>Unique feel-good features - It offers a range of feel-good features missing from rivals</li>
+                        <li class="text-white">Not the quietest diesel - There's some drivetrain lash when using the throttle</li>
+                        <li class="text-white">Airy cabin - More spacious than the Alcazar and almost as roomy as the Safari</li>
+                        <li class="text-white">Capable powertrains - The powertrain options effortlessly power the bulky XUV700</li>
+                        <li class="text-white">Unique feel-good features - It offers a range of feel-good features missing from rivals</li>
                     </ul>
                 </div>
             </div>
-            <div class="pros-three">
-                <div class="better-left">
-                    <h4>Could have been Better</h4>
+            <div class="pros-three row pt-3 pt-md-5 border-top px-md-5">
+                <div class="better-left col-6">
+                    <h4 class="text-danger">Could have been Better</h4>
                 </div>
-                <div class="better-right">
+                <div class="better-right col-6">
                     <ul>
-                        <li>Not the quietest diesel - There's some drivetrain lash when using the throttle</li>
-                        <li>Firm ride quality - It’s only at slow speeds that the ride can get bothersome</li>
-                        <li>Last row ingress/egress - The absence of a sliding second row makes it even worse</li>
+                        <li class="text-white">Not the quietest diesel - There's some drivetrain lash when using the throttle</li>
+                        <li class="text-white">Firm ride quality - It’s only at slow speeds that the ride can get bothersome</li>
+                        <li class="text-white">Last row ingress/egress - The absence of a sliding second row makes it even worse</li>
                     </ul>
                 </div>
             </div>
         </section>
+        <!---->
         <section class="car-review">
             <h1><b>"</b>Mahindra XUV700 </h1>
             <h3>User Review </h3>
@@ -501,6 +517,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Slider JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--bootstrap jc cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
     
